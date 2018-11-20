@@ -1,0 +1,222 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:NOISY
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Audio-Jack-2_Switch J2
+U 1 1 5BF23436
+P 2450 2250
+F 0 "J2" H 2400 2425 50  0000 C CNN
+F 1 "Audio-Jack-2_Switch" H 2675 2175 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm" H 2700 2350 50  0001 C CNN
+F 3 "" H 2700 2350 50  0001 C CNN
+	1    2450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NJFET_DSG Q1
+U 1 1 5BF23A89
+P 3500 2150
+F 0 "Q1" H 3700 2200 50  0000 L CNN
+F 1 "J201" H 3700 2100 50  0000 L CNN
+F 2 "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-I_SmallPads" H 3700 2250 50  0001 C CNN
+F 3 "" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5BF23B50
+P 3250 2600
+F 0 "R1" V 3330 2600 50  0000 C CNN
+F 1 "R" V 3250 2600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P7.62mm_Vertical" V 3180 2600 50  0001 C CNN
+F 3 "" H 3250 2600 50  0001 C CNN
+	1    3250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5BF23C44
+P 3600 2550
+F 0 "R2" V 3680 2550 50  0000 C CNN
+F 1 "R" V 3600 2550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P7.62mm_Vertical" V 3530 2550 50  0001 C CNN
+F 3 "" H 3600 2550 50  0001 C CNN
+	1    3600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2150 3300 2150
+$Comp
+L GND #PWR01
+U 1 1 5BF23CF3
+P 2250 2750
+F 0 "#PWR01" H 2250 2500 50  0001 C CNN
+F 1 "GND" H 2250 2600 50  0000 C CNN
+F 2 "" H 2250 2750 50  0001 C CNN
+F 3 "" H 2250 2750 50  0001 C CNN
+	1    2250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2750 2250 2350
+Wire Wire Line
+	3600 2400 3600 2350
+Wire Wire Line
+	3250 2450 3250 2150
+Connection ~ 3250 2150
+$Comp
+L GND #PWR02
+U 1 1 5BF23DED
+P 3250 2750
+F 0 "#PWR02" H 3250 2500 50  0001 C CNN
+F 1 "GND" H 3250 2600 50  0000 C CNN
+F 2 "" H 3250 2750 50  0001 C CNN
+F 3 "" H 3250 2750 50  0001 C CNN
+	1    3250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5BF23E26
+P 3600 2750
+F 0 "#PWR03" H 3600 2500 50  0001 C CNN
+F 1 "GND" H 3600 2600 50  0000 C CNN
+F 2 "" H 3600 2750 50  0001 C CNN
+F 3 "" H 3600 2750 50  0001 C CNN
+	1    3600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2700 3600 2750
+$Comp
+L Conn_01x01 J1
+U 1 1 5BF23EA0
+P 3400 1950
+F 0 "J1" H 3400 2050 50  0000 C CNN
+F 1 "+9 V" H 3400 1850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 3400 1950 50  0001 C CNN
+F 3 "" H 3400 1950 50  0001 C CNN
+	1    3400 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 5BF23FBE
+P 4050 2550
+F 0 "RV1" V 3875 2550 50  0000 C CNN
+F 1 "POT" V 3950 2550 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK09Y_Vertical" H 4050 2550 50  0001 C CNN
+F 3 "" H 4050 2550 50  0001 C CNN
+	1    4050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5BF24040
+P 3750 2350
+F 0 "C1" H 3775 2450 50  0000 L CNN
+F 1 "C" H 3775 2250 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm" H 3788 2200 50  0001 C CNN
+F 3 "" H 3750 2350 50  0001 C CNN
+	1    3750 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2350 4050 2350
+Wire Wire Line
+	4050 2350 4050 2400
+$Comp
+L GND #PWR04
+U 1 1 5BF24146
+P 4050 2750
+F 0 "#PWR04" H 4050 2500 50  0001 C CNN
+F 1 "GND" H 4050 2600 50  0000 C CNN
+F 2 "" H 4050 2750 50  0001 C CNN
+F 3 "" H 4050 2750 50  0001 C CNN
+	1    4050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2700 4050 2750
+$Comp
+L LED D1
+U 1 1 5BF24180
+P 3600 1500
+F 0 "D1" H 3600 1600 50  0000 C CNN
+F 1 "LED" H 3600 1400 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 3600 1500 50  0001 C CNN
+F 3 "" H 3600 1500 50  0001 C CNN
+	1    3600 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5BF2433B
+P 3600 1300
+F 0 "#PWR05" H 3600 1050 50  0001 C CNN
+F 1 "GND" H 3600 1150 50  0000 C CNN
+F 2 "" H 3600 1300 50  0001 C CNN
+F 3 "" H 3600 1300 50  0001 C CNN
+	1    3600 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 1350 3600 1300
+$Comp
+L R R3
+U 1 1 5BF24433
+P 3600 1800
+F 0 "R3" V 3680 1800 50  0000 C CNN
+F 1 "R" V 3600 1800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P7.62mm_Vertical" V 3530 1800 50  0001 C CNN
+F 3 "" H 3600 1800 50  0001 C CNN
+	1    3600 1800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
