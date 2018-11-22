@@ -8,12 +8,6 @@
   (resolution um 10)
   (unit um)
   (structure
-    (layer F.Cu
-      (type signal)
-      (property
-        (index 0)
-      )
-    )
     (layer B.Cu
       (type signal)
       (property
@@ -21,11 +15,11 @@
       )
     )
     (boundary
-      (rect pcb 117445 -82525 184185 -130405)
+      (rect pcb 73955 -85445 154560 -125535)
     )
     (via "Via[0-1]_600:400_um")
     (rule
-      (width 250)
+      (width 500)
       (clearance 200.1)
       (clearance 200.1 (type default_smd))
       (clearance 50 (type smd_smd))
@@ -33,52 +27,52 @@
   )
   (placement
     (component Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm
-      (place BT1 171450 -93980 front 270 (PN Battery_Cell))
+      (place BT1 78740 -121920 front 180 (PN Battery_Cell))
     )
     (component Capacitors_THT:CP_Radial_D12.5mm_P2.50mm
-      (place C1 151130 -107950 front 0 (PN 220mF))
-      (place C8 125730 -107950 front 180 (PN 220mF))
+      (place C1 111760 -93980 front 0 (PN 220mF))
+      (place C8 135890 -111760 front 180 (PN 220mF))
     )
     (component Capacitors_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm
-      (place C2 170180 -116840 front 90 (PN 47n))
-      (place C4 148590 -87630 front 0 (PN 100n))
-      (place C5 139700 -118110 front 0 (PN 100n))
-      (place C6 165100 -120650 front 180 (PN 100n))
-      (place C7 143510 -104140 front 180 (PN 47n))
+      (place C2 78740 -100330 front 90 (PN 47n))
+      (place C4 133350 -91440 front 180 (PN 100n))
+      (place C5 97790 -114300 front 0 (PN 100n))
+      (place C6 102870 -120650 front 180 (PN 100n))
+      (place C7 134620 -99060 front 0 (PN 47n))
     )
     (component Capacitors_THT:CP_Radial_D13.0mm_P7.50mm
-      (place C3 128270 -91440 front 180 (PN 100mF))
+      (place C3 123190 -111760 front 180 (PN 100mF))
     )
     (component LEDs:LED_D3.0mm
-      (place D1 146050 -96520 front 0 (PN LED))
+      (place D1 100330 -90170 front 0 (PN LED))
     )
     (component DARKO:Pin_Header_Straight_1x03_Pitch2.54mm
-      (place GAIN1 123190 -118110 front 90 (PN 10k))
-      (place INPUT1 170180 -121920 front 0 (PN 10k))
-      (place TONE1 153670 -127000 front 270 (PN 10k))
+      (place GAIN1 107950 -121920 front 90 (PN 10k))
+      (place INPUT1 78740 -106680 front 0 (PN 10k))
+      (place TONE1 88900 -121920 front 270 (PN 10k))
     )
     (component Pin_Headers:Pin_Header_Straight_1x03_Pitch2.00mm
-      (place input1 176530 -121920 front 90 (PN "audio input"))
-      (place J4 121920 -123190 front 90 (PN Headphones))
+      (place input1 95250 -90170 front 270 (PN "audio input"))
+      (place J4 149860 -107950 front 0 (PN Headphones))
     )
     (component Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm
-      (place LS1 162560 -127000 front 90 (PN Speaker))
+      (place LS1 146050 -116840 front 270 (PN Speaker))
     )
     (component "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-I_SmallPads"
-      (place Q1 137160 -95250 front 270 (PN J201))
+      (place Q1 92710 -106680 front 270 (PN J201))
     )
     (component Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P7.62mm_Vertical
-      (place R1 162560 -101600 front 0 (PN 1M))
-      (place R2 154940 -96520 front 0 (PN 3K3))
-      (place R3 143510 -86360 front 180 (PN 4k7))
-      (place R4 134620 -110490 front 0 (PN 10))
-      (place R5 134620 -125730 front 90 (PN 10))
+      (place R1 91440 -114300 front 180 (PN 1M))
+      (place R2 85090 -91440 front 270 (PN 3K3))
+      (place R3 99060 -97790 front 180 (PN 4k7))
+      (place R4 138430 -91440 front 0 (PN 10))
+      (place R5 144780 -105410 front 270 (PN 10))
     )
     (component Buttons_Switches_THT:SW_DIP_x1_W7.62mm_Slide_LowProfile
-      (place SW1 170180 -87630 front 180 (PN SW_DIP_x01))
+      (place SW1 123190 -100330 front 0 (PN SW_DIP_x01))
     )
     (component "Housings_DIP:DIP-8_W7.62mm"
-      (place U1 175260 -99060 front 0 (PN LM386))
+      (place U1 101600 -109220 front 90 (PN LM386))
     )
   )
   (library
@@ -914,15 +908,13 @@
     )
     (class kicad_default "" GND "Net-(BT1-Pad1)" "Net-(C2-Pad1)" "Net-(C2-Pad2)"
       "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(C4-Pad2)" "Net-(C5-Pad2)" "Net-(C6-Pad1)"
-      "Net-(C6-Pad2)" "Net-(C7-Pad2)" "Net-(C8-Pad1)" "Net-(C8-Pad2)" "Net-(D1-Pad1)"
-      "Net-(D1-Pad2)" "Net-(GAIN1-Pad1)" "Net-(GAIN1-Pad2)" "Net-(J2-Pad1)"
-      "Net-(J2-Pad3)" "Net-(J4-Pad3)" "Net-(Q1-Pad3)" "Net-(R4-Pad1)" "Net-(SW1-Pad1)"
-      "Net-(U1-Pad1)" "Net-(U1-Pad8)" "Net-(input1-Pad3)"
+      "Net-(C6-Pad2)" "Net-(C7-Pad2)" "Net-(C8-Pad2)" "Net-(D1-Pad2)" "Net-(GAIN1-Pad1)"
+      "Net-(GAIN1-Pad2)" "Net-(J4-Pad3)" "Net-(Q1-Pad3)" "Net-(input1-Pad3)"
       (circuit
         (use_via Via[0-1]_600:400_um)
       )
       (rule
-        (width 250)
+        (width 500)
         (clearance 200.1)
       )
     )
