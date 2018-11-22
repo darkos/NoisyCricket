@@ -5,4 +5,15 @@ D Unpolarized capacitor
 K cap capacitor
 $ENDCMP
 #
+$CMP POT-NOISY
+D Potentiometer
+K resistor variable
+$ENDCMP
+#
+$CMP POT-PINS
+D Generic connector, single row, 01x03
+K connector
+F ~
+$ENDCMP
+#
 #End Doc Library
